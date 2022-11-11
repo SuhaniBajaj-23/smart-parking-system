@@ -61,7 +61,7 @@
             font-family: 'Inter';
             font-size: 20px;
         }
-        #user{
+        #fname,#lname,#gender,#age,#email,#number,#pass,#confirmpass{
             margin: 10px;
             background: transparent;
             border: none;
@@ -77,10 +77,14 @@
             border: 0;
         }
         .last{
+            text-align: center;
+        }
+        button{
             font-family: 'Inter';
             font-size: 15px;
             text-align: center;
             color: white;
+            background-color: transparent;   
         }
         a:visited{
             color: white;
@@ -94,7 +98,7 @@
             <ul>
                 <li><a href="home.html">Home</a></li>
                 <li><a href="booking.html">Booking Status</a></li>
-                <li><a href="spot.html">Spot</a></li>
+                <li><a href="status.html">Spot</a></li>
                 <li><a href="location.html">Location</a></li>
                 <div class="search">
                     Login/Register
@@ -110,30 +114,34 @@
             </div><br><br>
             <div class="user">
             <label for="user">First Name</label>
-            <input type="text" id="user" name="Username" required>&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160
+            <input type="text" id="fname" name="Username" required>&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160
             <label for="user">Gender&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160</label>
-            <input type="text" id="user" name="Username" required><br><br><br>
+            <input type="text" id="gender" name="Username" required><br><br><br>
             <label for="user">Last Name&#160</label>
-            <input type="text" id="user" name="Username" required>&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160 
+            <input type="text" id="lname" name="Username" required>&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160 
             <label for="user">Email&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160</label>
-            <input type="text" id="user" name="Username" required><br><br><br>
+            <input type="text" id="email" name="Username" required><br><br><br>
             <label for="user">Age&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160</label>
-            <input type="text" id="user" name="Username" required>&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160
+            <input type="text" id="age" name="Username" required>&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160
             <label for="user">Password&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160</label>
-            <input type="text" id="user" name="Username" required><br><br><br>
+            <input type="text" id="pass" name="Username" required><br><br><br>
             <label for="user">Mobile No.</label>
-            <input type="text" id="user" name="Username" required>&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160 
+            <input type="text" id="number" name="Username" required>&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160 
             <label for="user">Confirm Password</label>
-            <input type="text" id="user" name="Username" required>
+            <input type="text" id="confirmpass" name="Username" required>
         </div><br>
             <div class="submit">
                 <a href="location.html"> 
-                <button type="submit" class="submit"><b>Register</b></button></a>
+                <button type="submit" class="submit" onclick="register()"><b>Register</b></button></a>
             </div>
         </div><br>
         <div class="last">
-           <a href="login.html"> Already have an account? Sign in</a>
+           <a href="login.html"><button > Already have an account? Sign in</button></a>
         </div>
+        <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-database.js"></script>
+        <script src="location.js"></script>
 </body>
 
 </html>
