@@ -72,12 +72,19 @@
             font-family: 'Inter';
             font-size: 20px;
             text-align: center;
+            background-color: transparent;
+            color: white;
+            border: 0;
         }
         .last{
             font-family: 'Inter';
             font-size: 15px;
             text-align: center;
             color: white;
+        }
+        a:visited{
+            color: white;
+            text-decoration: none;
         }
     </style>
 </head>
@@ -103,28 +110,29 @@
             </div><br><br>
             <div class="user">
             <label for="user">First Name</label>
-            <input type="text" id="user" name="Username">&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160
+            <input type="text" id="user" name="Username" required>&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160
             <label for="user">Gender&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160</label>
-            <input type="text" id="user" name="Username"><br><br><br>
+            <input type="text" id="user" name="Username" required><br><br><br>
             <label for="user">Last Name&#160</label>
-            <input type="text" id="user" name="Username">&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160 
+            <input type="text" id="user" name="Username" required>&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160 
             <label for="user">Email&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160</label>
-            <input type="text" id="user" name="Username"><br><br><br>
+            <input type="text" id="user" name="Username" required><br><br><br>
             <label for="user">Age&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160</label>
-            <input type="text" id="user" name="Username">&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160
+            <input type="text" id="user" name="Username" required>&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160
             <label for="user">Password&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160</label>
-            <input type="text" id="user" name="Username"><br><br><br>
+            <input type="text" id="user" name="Username" required><br><br><br>
             <label for="user">Mobile No.</label>
-            <input type="text" id="user" name="Username">&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160 
+            <input type="text" id="user" name="Username" required>&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160 
             <label for="user">Confirm Password</label>
-            <input type="text" id="user" name="Username">
+            <input type="text" id="user" name="Username" required>
         </div><br>
             <div class="submit">
-                <b>Submit</b>
+                <a href="location.html"> 
+                <button type="submit" class="submit"><b>Register</b></button></a>
             </div>
         </div><br>
         <div class="last">
-            Already have an account? Sign in
+           <a href="login.html"> Already have an account? Sign in</a>
         </div>
 </body>
 

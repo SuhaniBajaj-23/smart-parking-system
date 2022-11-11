@@ -55,14 +55,22 @@ body{
 }
 .button{
     padding-left: 24vw;
+    color: white;
 }
 .login{
     background-color: #333333;
     font-size: 17px;
     font-family: 'Inter';
-    color: white;
+    color: white ;
+    text-decoration: none !important;
     text-align: center;
     width: 10vw;
     height: 6vh;
     border-radius: 23px;
+}
+a:visited{
+    color: white;
+    text-decoration: none;
+    font-family: 'Inter';
+    
 }

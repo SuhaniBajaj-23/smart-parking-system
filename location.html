@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href='https://fonts.googleapis.com/css?family=Baloo 2' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <title>Navigation</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .navbar{
+            background-color: #333333;
+            font-family: 'Inter';
+         }
+         ul {
+            font-size: 20px;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        li {
+            float: left;
+        }
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 13px 20px;
+            text-decoration: none;
+        }
+        .search{
+            float: right;
+            padding: 13px 20px;
+            color: white;
+        }
+        .random{
+            height: 75vh;
+            width: 40vw;
+        }
+        .main{
+            color: white;
+            font-family: 'Inter';
+            padding-left: 60vw;
+            padding-right: 10vw;
+            padding-top: 25vh;
+        }
+        .heading{
+            font-size: 40px;
+            text-align: center;
+        }
+        .submit{
+            text-align: center;
+            font-size: 25px;
+        }
+        select{
+            width: 30vw;
+            height: 4vh;
+            align-self: center;
+        }
+        
+    </style>
+</head>
+
+<body>
+        <nav class="navbar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="booking.html">Booking Status</a></li>
+                <li><a href="spot.html">Spot</a></li>
+                <li><a href="location.html">Location</a></li>
+                <div class="search">
+                    Sign Out
+                </div>
+            </ul>
+        </nav>
+        <img align="left" class="random" src="random.png" alt="">
+        <div class="main">
+            <div class="heading">
+                Choose Your Location
+            </div><br><br>
+            <div class="list">
+                <SELECT id="cities">
+                    <option value="--Select a City--">--Select a City--</option>
+                    <OPTION Value="delhi">Delhi</OPTION>
+                    <OPTION Value="punjab">Punjab</OPTION>
+                    <OPTION Value="mumbai">Mumbai</OPTION>
+                    <OPTION Value="tamil">Tamil Nadu</OPTION>
+                    <OPTION Value="kolkata">Kolkata</OPTION>
+                    <OPTION Value="gujarat">Gujarat</OPTION>
+                    <OPTION Value="karnataka">Karnataka</OPTION>
+                    <OPTION Value="kashmir">Kashmir</OPTION>
+                    <OPTION Value="assam">Assam</OPTION>
+                    <OPTION Value="rajasthan">Rajasthan</OPTION>
+                    <OPTION Value="maharashtra">Maharashtra</OPTION>
+                    <OPTION Value="madhya">Madhya Pradesh</OPTION>
+                    <OPTION Value="uttar">Uttar Pradesh</OPTION>
+                    <OPTION Value="kerela">Kerela</OPTION>
+                    <OPTION Value="uttrakhand">Uttrakhand</OPTION>
+                    <OPTION Value="haryana">haryana</OPTION>
+                    <OPTION Value="andhra">Andhra Pradesh</OPTION>
+                    <OPTION Value="meghalaya">Meghalaya</OPTION>
+
+                    
+                    </SELECT>
+            </div><br><br>
+            <div class="submit">
+                Submit
+            </div>
+        </div>
+        <!-- <script src="location.js"></script> -->
+</body>
+
+</html>
